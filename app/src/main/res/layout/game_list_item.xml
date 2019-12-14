@@ -13,13 +13,13 @@
         android:layout_marginLeft="5dp">
 
         <TextView
-            android:id="@+id/titleTxt"
+            android:id="@+id/gameTitleTxt"
             android:layout_width="match_parent" android:layout_height="wrap_content"
             android:text="아스팔트8 : 에어본"
             android:textColor="#000000"
             android:textSize="16sp"/>
         <TextView
-            android:id="@+id/companyNameTxt"
+            android:id="@+id/gameCompanyNameTxt"
             android:layout_width="match_parent" android:layout_height="wrap_content"
             android:text="GameLoft"
             android:textColor="#7A7A7A"/>
