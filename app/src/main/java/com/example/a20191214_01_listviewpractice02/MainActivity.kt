@@ -45,7 +45,6 @@ class MainActivity : BaseActivity() {
 
     override fun setValues() {
         addGames()
-
         gameAdapter = GameAdapter(mContext, R.layout.game_list_item, gameList)
         gameListView.adapter = gameAdapter
     }
