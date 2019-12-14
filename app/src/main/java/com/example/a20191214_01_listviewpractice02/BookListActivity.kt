@@ -17,7 +17,6 @@ class BookListActivity : BaseActivity() {
         setValues()
     }
 
-
     override fun setupEvents() {
     }
 

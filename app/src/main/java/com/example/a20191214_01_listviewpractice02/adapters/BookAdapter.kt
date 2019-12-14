@@ -18,12 +18,13 @@ class BookAdapter(context:Context, resId:Int, list:ArrayList<BookData>) : ArrayA
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
         var tempRow = convertView
 
-//        tempRow?.let {
-//            tempRow = inf.inflate(R.layout.book_list_item, null)
-//        }
-        if (tempRow == null) {
+        tempRow?.let {
+        } .let {
             tempRow = inf.inflate(R.layout.book_list_item, null)
         }
+//        if (tempRow == null) {
+//            tempRow = inf.inflate(R.layout.book_list_item, null)
+//        }
         val row = tempRow!!
 
         val data = mList.get(position)
