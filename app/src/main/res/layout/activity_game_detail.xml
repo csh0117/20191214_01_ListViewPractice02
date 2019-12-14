@@ -11,7 +11,8 @@
 
         <ImageView
             android:layout_width="100dp"
-            android:layout_height="100dp"/>
+            android:layout_height="100dp"
+            android:src="@mipmap/ic_launcher"/>
     </LinearLayout>
 
     <LinearLayout
@@ -22,6 +23,7 @@
             android:layout_height="wrap_content"
             android:text="게임제목"/>
         <TextView
+            android:id="@+id/gameTitleTxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="10sp"
@@ -38,6 +40,7 @@
             android:layout_height="wrap_content"
             android:text="개발한 회사"/>
         <TextView
+            android:id="@+id/gameCompanyNameTxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="10sp"

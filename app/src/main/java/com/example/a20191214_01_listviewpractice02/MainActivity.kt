@@ -1,5 +1,6 @@
 package com.example.a20191214_01_listviewpractice02
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import com.example.a20191214_01_listviewpractice02.adapters.GameAdapter
@@ -19,7 +20,14 @@ class MainActivity : BaseActivity() {
 
     override fun setupEvents() {
         gameListView.setOnItemClickListener { parent, view, position, id ->
-            Toast.makeText(mContext, "${position}번 줄 클릭", Toast.LENGTH_SHORT).show()
+//            Toast.makeText(mContext, "${position}번 줄 클릭", Toast.LENGTH_SHORT).show()
+
+            val clickGameData = gameList.get(position)
+            Toast.makeText(mContext,"${clickGameData.title} 클릭", Toast.LENGTH_SHORT).show()
+
+            val intent = Intent(mContext, GameDetailActivity::class.java)
+            intent.putExtra("gameData", clickGameData)
+            startActivity(intent)
         }
     }
 
